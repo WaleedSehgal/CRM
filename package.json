@@ -1,0 +1,20 @@
+{
+  "name": "api-endpoints",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Waleed Sehgal",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2019": "^1.0.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "express": "^4.17.1",
+    "mongodb": "^3.2.7",
+    "mongoose": "^5.6.1",
+    "nodemon": "^1.19.1"
+  }
+}
