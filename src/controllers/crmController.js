@@ -22,3 +22,30 @@ export const getContacts = (req, res) =>{
         res.json(contact);
     });
 };
+
+export const getContactWithID = (req, res) => {
+    Contact.findById(req.params.contactId, (err, contact) =>{
+        if (err) {
+            res.send(err);
+        }
+        res.json(contact);
+    });
+}
+
+export const updateContact = (req, res) => {
+    Contact.findByIdAndUpdate({ _id: req.params.contactId}, req.body, { new: true}, (err, contact) => {
+        if (err) {
+            res.send(err);
+        }
+        res.json(contact);
+    });
+}
+
+export const deletecontact = (req, res) => {
+    Contact.remove({ _id: req.params.contactId}, (err, contact) => {
+        if (err) {
+            res.send(err);
+        }
+        res.json( {message: "Successfully deleted contact"});
+    });
+}
