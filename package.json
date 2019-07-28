@@ -18,5 +18,8 @@
     "mongodb": "^3.2.7",
     "mongoose": "^5.6.1",
     "nodemon": "^1.19.1"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.15"
   }
 }
